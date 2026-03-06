@@ -1,7 +1,7 @@
 from TVPoke.BaseClasses.PokeTypes import Grass, Poison
 from TVPoke.BaseClasses.Move import Move
 
-class Gloom(Grass, Poison):
+class Gloom(Poison):
     def __init__(self):
         moves = [
             Move("Absorb", "NORMAL", 60),
@@ -10,3 +10,33 @@ class Gloom(Grass, Poison):
             Move("Acid", "POISON", 60)
         ]
         super().__init__("Gloom", 140, moves, "./TVPoke/Pokemon/imgs/Gloom.png")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
