@@ -17,13 +17,29 @@ class BattleScreen(Screen):
 
         y = 0
         #two rows of three
+        trainerOneOrTwo = 1
         for trainer in self.trainers:
-            x = 0
-            y += 100/3
+            if trainerOneOrTwo == 1:
+                x = 10
+                y = 90
+            if trainerOneOrTwo == 2:
+                x = 90
+                y = 90
+                
             for poke in trainer.pokemon:
-                x += 100/4
-                self.elements.append(Image((x, y), 20, 20, poke.img))
-                self.elements.append(Label((x, y + 10), 20, 10, poke.name))
+                if trainerOneOrTwo == 1:
+                    self.elements.append(Image((x, y), 20, 20, poke.img))
+                    y -=18
+                    self.elements.append(Label((x, y + 10), 20, 10, poke.name))
+                    y -=23
+                    trainerOneOrTwo +=1
+            
+                if trainerOneOrTwo == 2:
+                    self.elements.append(Image((x, y), 20, 20, poke.img))
+                    y -=18
+                    self.elements.append(Label((x, y + 10), 20, 10, poke.name))
+                    y -=23
+   
                 
 
 
