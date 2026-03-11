@@ -9,4 +9,4 @@ class Oddish(Grass):
             Move(),
             Move()
         ]
-        super().__init__("Oddish", 80, moves, "https://www.clipartmax.com/png/middle/171-1711907_oddish-oddish-pokemon.png")
+        super().__init__("Oddish", 90, moves, "./TVPoke/Pokemon/imgs/Oddish.png")
