@@ -108,6 +108,3 @@ class ForwardButton(Image):
     def onClick(self, screen):
         screen.state["pageNum"] += 1
         screen.updatePokemonShowing()
-
-    
-        
