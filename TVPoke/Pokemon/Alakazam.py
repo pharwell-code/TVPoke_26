@@ -9,4 +9,4 @@ class Alakazam(Psychic):
             Move("Recover", "PSYCHIC", 100),
             Move("Thunder bolt", "PSYCHIC", 120)
         ]
-        super().__init__("Alakazam", 100, moves, "./TVPoke/Pokemon/imgs/Alakazam.py")
+        super().__init__("Alakazam", 100, moves, "./TVPoke/Pokemon/imgs/Alakazam.png")
